@@ -47,7 +47,10 @@
 #include "lcec_deasda.h"
 #include "lcec_omrg5.h"
 #include "lcec_ph3lm2rm.h"
+#include "lcec_r1_ec5500.h"
+#include "lcec_r1_ec60x2.h"
 
+#include "rtapi_mutex.h"
 #include "rtapi_app.h"
 
 MODULE_LICENSE("GPL");
@@ -66,6 +69,7 @@ static const lcec_typelist_t types[] = {
   // bus coupler
   { lcecSlaveTypeEK1100, LCEC_EK1100_VID, LCEC_EK1100_PID, LCEC_EK1100_PDOS, NULL},
   { lcecSlaveTypeEK1110, LCEC_EK1110_VID, LCEC_EK1110_PID, LCEC_EK1110_PDOS, NULL},
+  { lcecSlaveTypeR1_EC5500, LCEC_R1_EC5500_VID,LCEC_R1_EC5500_PID,LCEC_R1_EC5500_PDOS,NULL},
 
   // AX5000 servo drives
   { lcecSlaveTypeAX5203, LCEC_AX5200_VID, LCEC_AX5203_PID, LCEC_AX5200_PDOS, lcec_ax5200_init},
@@ -92,6 +96,8 @@ static const lcec_typelist_t types[] = {
   { lcecSlaveTypeEL1252, LCEC_EL1252_VID, LCEC_EL1252_PID, LCEC_EL1252_PDOS, lcec_el1252_init},  // 2 fast channels with timestamp
   { lcecSlaveTypeEL1808, LCEC_EL1xxx_VID, LCEC_EL1808_PID, LCEC_EL1808_PDOS, lcec_el1xxx_init},
   { lcecSlaveTypeEL1809, LCEC_EL1xxx_VID, LCEC_EL1809_PID, LCEC_EL1809_PDOS, lcec_el1xxx_init},
+  { lcecSlaveTypeR1_EC6002,LCEC_R1_EC60X2_VID,LCEC_R1_EC6002_PID,LCEC_R1_EC6002_PDOS,lcec_r1_ec60x2_init},
+  { lcecSlaveTypeR1_EC6022,LCEC_R1_EC60X2_VID,LCEC_R1_EC6022_PID,LCEC_R1_EC6022_PDOS,lcec_r1_ec60x2_init},
 
   // digital out
   { lcecSlaveTypeEL2002, LCEC_EL2xxx_VID, LCEC_EL2002_PID, LCEC_EL2002_PDOS, lcec_el2xxx_init},

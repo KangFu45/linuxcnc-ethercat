@@ -67,6 +67,7 @@ static const LCEC_CONF_TYPELIST_T slaveTypes[] = {
   // bus coupler
   { "EK1100", lcecSlaveTypeEK1100, NULL },
   { "EK1110", lcecSlaveTypeEK1110, NULL },
+  { "R1_EC5500",lcecSlaveTypeR1_EC5500,NULL},
 
   // generic device
   { "generic", lcecSlaveTypeGeneric, NULL },
@@ -96,6 +97,8 @@ static const LCEC_CONF_TYPELIST_T slaveTypes[] = {
   { "EL1252", lcecSlaveTypeEL1252, NULL },
   { "EL1808", lcecSlaveTypeEL1808, NULL },
   { "EL1809", lcecSlaveTypeEL1809, NULL },
+  { "R1_EC6002",lcecSlaveTypeR1_EC6002,NULL},
+  { "R1_EC6020",lcecSlaveTypeR1_EC6022,NULL},
 
   // digital out
   { "EL2002", lcecSlaveTypeEL2002, NULL },
