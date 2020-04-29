@@ -30,5 +30,8 @@ lcec-objs := \
     lcec_stmds5k.o \
     lcec_deasda.o \
     lcec_omrg5.o \
-    lcec_ph3lm2rm.o
+    lcec_ph3lm2rm.o \
+    lcec_r1_ec60x2.o \
+    lcec_r1_ec70x2.o \
+    lcec_r1_ec9144.o \
 

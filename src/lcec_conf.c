@@ -120,6 +120,12 @@ static const LCEC_CONF_TYPELIST_T slaveTypes[] = {
   { "EL2809", lcecSlaveTypeEL2809, NULL },
 
   { "EP2028", lcecSlaveTypeEP2028, NULL },
+  { "R1_EC7062", lcecSlaveTypeR1_EC7062, NULL },
+  { "R1_EC70A2", lcecSlaveTypeR1_EC70A2, NULL },
+  { "R1_EC70E2", lcecSlaveTypeR1_EC70E2, NULL },
+  { "R1_EC70F2", lcecSlaveTypeR1_EC70F2, NULL },
+  { "R1_EC7162", lcecSlaveTypeR1_EC7162, NULL },
+  { "R1_EC71A2", lcecSlaveTypeR1_EC71A2, NULL },
 
   // analog in, 2ch, 16 bits
   { "EL3102", lcecSlaveTypeEL3102, NULL },
@@ -153,6 +159,7 @@ static const LCEC_CONF_TYPELIST_T slaveTypes[] = {
   // analog out, 4ch, 16 bits
   { "EL4104", lcecSlaveTypeEL4104, NULL },
   { "EL4134", lcecSlaveTypeEL4134, NULL },
+  { "R1_EC9144", lcecSlaveTypeR1_EC9144, NULL },
 
   // analog out, 8ch, 12 bits
   { "EL4008", lcecSlaveTypeEL4008, NULL },

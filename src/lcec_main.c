@@ -49,6 +49,8 @@
 #include "lcec_ph3lm2rm.h"
 #include "lcec_r1_ec5500.h"
 #include "lcec_r1_ec60x2.h"
+#include "lcec_r1_ec70x2.h"
+#include "lcec_r1_ec9144.h"
 
 #include "rtapi_mutex.h"
 #include "rtapi_app.h"
@@ -119,6 +121,12 @@ static const lcec_typelist_t types[] = {
   { lcecSlaveTypeEL2809, LCEC_EL2xxx_VID, LCEC_EL2809_PID, LCEC_EL2809_PDOS, lcec_el2xxx_init},
 
   { lcecSlaveTypeEP2028, LCEC_EL2xxx_VID, LCEC_EP2028_PID, LCEC_EP2028_PDOS, lcec_el2xxx_init},
+  { lcecSlaveTypeR1_EC7062,LCEC_R1_EC70X2_VID,LCEC_R1_EC7062_PID,LCEC_R1_EC7062_PDOS,lcec_r1_ec70x2_init},
+  { lcecSlaveTypeR1_EC70A2,LCEC_R1_EC70X2_VID,LCEC_R1_EC70A2_PID,LCEC_R1_EC70A2_PDOS,lcec_r1_ec70x2_init},
+  { lcecSlaveTypeR1_EC70E2,LCEC_R1_EC70X2_VID,LCEC_R1_EC70E2_PID,LCEC_R1_EC70E2_PDOS,lcec_r1_ec70x2_init},
+  { lcecSlaveTypeR1_EC70F2,LCEC_R1_EC70X2_VID,LCEC_R1_EC70F2_PID,LCEC_R1_EC70F2_PDOS,lcec_r1_ec70x2_init},
+  { lcecSlaveTypeR1_EC7162,LCEC_R1_EC70X2_VID,LCEC_R1_EC7162_PID,LCEC_R1_EC7162_PDOS,lcec_r1_ec70x2_init},
+  { lcecSlaveTypeR1_EC71A2,LCEC_R1_EC70X2_VID,LCEC_R1_EC71A2_PID,LCEC_R1_EC71A2_PDOS,lcec_r1_ec70x2_init},
 
   // analog in, 2ch, 16 bits
   { lcecSlaveTypeEL3102, LCEC_EL31x2_VID, LCEC_EL3102_PID, LCEC_EL31x2_PDOS, lcec_el31x2_init},
@@ -152,6 +160,7 @@ static const lcec_typelist_t types[] = {
   // analog out, 4ch, 16 bits
   { lcecSlaveTypeEL4104, LCEC_EL41x4_VID, LCEC_EL4104_PID, LCEC_EL41x4_PDOS, lcec_el41x4_init},
   { lcecSlaveTypeEL4134, LCEC_EL41x4_VID, LCEC_EL4134_PID, LCEC_EL41x4_PDOS, lcec_el41x4_init},
+  { lcecSlaveTypeR1_EC9144,LCEC_R1_EC9144_VID,LCEC_R1_EC9144_PID,LCEC_R1_EC9144_PDOS,lcec_r1_ec9144_init},
 
   // analog out, 8ch, 12 bits
   { lcecSlaveTypeEL4008, LCEC_EL40x8_VID, LCEC_EL4008_PID, LCEC_EL40x8_PDOS, lcec_el40x8_init},
