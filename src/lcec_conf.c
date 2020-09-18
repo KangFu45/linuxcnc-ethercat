@@ -67,7 +67,6 @@ static const LCEC_CONF_TYPELIST_T slaveTypes[] = {
   // bus coupler
   { "EK1100", lcecSlaveTypeEK1100, NULL },
   { "EK1110", lcecSlaveTypeEK1110, NULL },
-  { "R1_EC5500",lcecSlaveTypeR1_EC5500,NULL},
 
   // generic device
   { "generic", lcecSlaveTypeGeneric, NULL },
@@ -97,8 +96,7 @@ static const LCEC_CONF_TYPELIST_T slaveTypes[] = {
   { "EL1252", lcecSlaveTypeEL1252, NULL },
   { "EL1808", lcecSlaveTypeEL1808, NULL },
   { "EL1809", lcecSlaveTypeEL1809, NULL },
-  { "R1_EC6002",lcecSlaveTypeR1_EC6002,NULL},
-  { "R1_EC6020",lcecSlaveTypeR1_EC6022,NULL},
+  { "EL1819", lcecSlaveTypeEL1819, NULL },
 
   // digital out
   { "EL2002", lcecSlaveTypeEL2002, NULL },
@@ -115,17 +113,15 @@ static const LCEC_CONF_TYPELIST_T slaveTypes[] = {
   { "EL2202", lcecSlaveTypeEL2202, NULL },
   { "EL2612", lcecSlaveTypeEL2612, NULL },
   { "EL2622", lcecSlaveTypeEL2622, NULL },
+  { "EL2634", lcecSlaveTypeEL2634, NULL },
   { "EL2808", lcecSlaveTypeEL2808, NULL },
   { "EL2798", lcecSlaveTypeEL2798, NULL },
   { "EL2809", lcecSlaveTypeEL2809, NULL },
 
   { "EP2028", lcecSlaveTypeEP2028, NULL },
-  { "R1_EC7062", lcecSlaveTypeR1_EC7062, NULL },
-  { "R1_EC70A2", lcecSlaveTypeR1_EC70A2, NULL },
-  { "R1_EC70E2", lcecSlaveTypeR1_EC70E2, NULL },
-  { "R1_EC70F2", lcecSlaveTypeR1_EC70F2, NULL },
-  { "R1_EC7162", lcecSlaveTypeR1_EC7162, NULL },
-  { "R1_EC71A2", lcecSlaveTypeR1_EC71A2, NULL },
+
+  // digital in(out
+  { "EL1859", lcecSlaveTypeEL1859, NULL },
 
   // analog in, 2ch, 16 bits
   { "EL3102", lcecSlaveTypeEL3102, NULL },
@@ -134,6 +130,9 @@ static const LCEC_CONF_TYPELIST_T slaveTypes[] = {
   { "EL3142", lcecSlaveTypeEL3142, NULL },
   { "EL3152", lcecSlaveTypeEL3152, NULL },
   { "EL3162", lcecSlaveTypeEL3162, NULL },
+
+  // analog in, 4ch, 16 bits
+  { "EL3164", lcecSlaveTypeEL3164, NULL },
 
   // analog in, 5ch, 16 bits
   { "EL3255", lcecSlaveTypeEL3255, NULL },
@@ -159,7 +158,6 @@ static const LCEC_CONF_TYPELIST_T slaveTypes[] = {
   // analog out, 4ch, 16 bits
   { "EL4104", lcecSlaveTypeEL4104, NULL },
   { "EL4134", lcecSlaveTypeEL4134, NULL },
-  { "R1_EC9144", lcecSlaveTypeR1_EC9144, NULL },
 
   // analog out, 8ch, 12 bits
   { "EL4008", lcecSlaveTypeEL4008, NULL },
